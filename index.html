@@ -3,23 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>Un verano de despedida</title>
-</head>
-  
-   <style>
-    /* ====== 全域樣式：顏色、字型、背景 ====== */
-    :root {
-      --bg: #0f172a;
-      --fg: #e5e7eb;
-      --accent: #38bdf8;
-      --card: #111827;
+
+  <!-- 這裡是顏色與簡單排版設定 -->
+  <style>
+    /* 整個網頁的背景 & 字體顏色 */
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #0f172a; /* 深藍色背景 */
+      color: #e5e7eb;            /* 淺色文字 */
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
+    h1 {
+      color: #38bdf8;            /* 標題用亮一點的藍色 */
     }
+
+    img {
+      max-width: 400px;          /* 圖片最多 400px 寬 */
+      width: 100%;               /* 手機上自動縮放 */
+      border-radius: 12px;       /* 圓角 */
+      display: block;
+      margin-top: 20px;
+    }
+  </style>
+</head>
 
 <body>
   <h1>Algunas imágenes hermosas</h1>
   <p>recuerdos vagos</p>
+
+  <!-- 在這裡放照片：把 photo.jpg 換成你的檔名 -->
+  <img src="images/photo.jpg" alt="Recuerdos del verano">
 </body>
 </html>
