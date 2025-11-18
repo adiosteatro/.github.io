@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>Poema 1 – Un verano que no sabe irse</title>
+
+  <style>
+    /* ===== 全站基礎（跟首頁、poemas 一致） ===== */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFF4DF;
+      color: #2E3A5C;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+      margin-left: 210px; /* 左側欄讓出空間；如果你之後改右側欄再一起調整 */
+    }
+
+    h1, h2 {
+      color: #F47A5E; /* 日落橘 */
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #D9A441; /* 金色 */
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: #E0BB74;
+    }
+
+    /* ===== 玻璃霧面側欄（跟 index / poemas 同一套） ===== */
+    .glass-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 100%;
+      padding: 28px 18px;
+      background: rgba(255, 255, 255, 0.28);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      z-index: 1000;
+    }
+
+    .glass-sidebar a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: #2E3A5C;
+      padding: 6px 4px;
+      border-radius: 8px;
+      transition: 0.25s ease;
+    }
+
+    .glass-sidebar a:hover {
+      background-color: rgba(243, 204, 122, 0.45);
+      color: #2E3A5C;
+      backdrop-filter: blur(24px);
+    }
+
+    @media (max-width: 650px) {
+      .glass-sidebar {
+        width: 130px;
+        padding: 20px 14px;
+      }
+      .glass-sidebar a {
+        font-size: 14px;
+      }
+      .page {
+        margin-left: 150px;
+      }
+    }
+
+    /* ===== 單篇頁面樣式：上圖下文 ===== */
+
+    .entry-header {
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(58,124,165,0.25);
+      padding-bottom: 10px;
+    }
+
+    .entry-meta {
+      font-size: 13px;
+      color: #465A7C;
+    }
+
+    .entry-tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background-color: #F3CC7A;
+      color: #2E3A5C;
+      font-size: 12px;
+      margin-right: 8px;
+    }
+
+    .entry-hero {
+      margin-top: 18px;
+      margin-bottom: 20px;
+    }
+
+    .entry-hero img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      display: block;
+    }
+
+    .entry-text p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .entry-text em {
+      font-style: normal;
+      color: #DDA09C; /* 柔粉色強調句 */
+    }
+
+    .entry-footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #9A6C64;
+    }
+
+    .back-link {
+      margin-top: 24px;
+      font-size: 13px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- 玻璃霧面側欄 -->
+  <nav class="glass-sidebar">
+    <a href="index.html">Inicio</a>
+    <a href="poemas.html">Poemas</a>
+    <a href="musica.html">Música</a>
+    <a href="galeria.html">Galería</a>
+  </nav>
+
+  <main class="page">
+    <!-- 標題＋日期 -->
+    <header class="entry-header">
+      <h1>Un verano que no sabe irse</h1>
+      <div class="entry-meta">
+        <span class="entry-tag">Diario</span>
+        <span>2025.07.26 · en algún lugar entre la ventana y la estación</span>
+      </div>
+    </header>
+
+    <!-- 上圖 -->
+    <div class="entry-hero">
+      <!-- 把檔名換成你實際的，例如 1023705.jpg 或 images/xxx.jpg -->
+      <img src="memo/m2.jpg" alt="Luz de la tarde en la ventana">
+    </div>
+
+    <!-- 下文 -->
+    <article class="entry-text">
+      <p>
+        那個夏天總是黃昏特別長。窗外的光線像忘了時間，一層一層黏在玻璃上，
+        把房間裡所有尚未說完的話都照得有點透明。你靠在椅子上，說只是短暫的分開，
+        像一班晚點的車，總會到站。
+      </p>
+
+      <p>
+        可是有些列車一旦離開月台，就再也不回頭。<em>我們都懂</em>，卻誰也沒有把這句話說出口。
+        於是我們開始把一些普通得不能再普通的畫面，收集成祕密的標本：
+        杯沿乾掉的咖啡痕跡、電扇晃動時發出的輕微噪音、你忽然停在半句的沉默。
+      </p>
+
+      <p>
+        很久以後翻起這一頁，我可能不再記得那天的日期，也不記得我們談了些什麼。
+        可是只要看到這張照片——窗邊傾斜的光，和桌上那個被遺忘的杯子——我就會想起，
+        有一個夏天，我們曾經在同一個房間裡，試圖學會如何好好道別。
+      </p>
+
+      <p class="entry-footer-note">
+        Es sólo un recuerdo, pero insiste en quedarse un poco más.
+      </p>
+    </article>
+
+    <div class="back-link">
+      ← <a href="poemas.html">volver a la lista de poemas</a>
+    </div>
+  </main>
+</body>
+</html>
