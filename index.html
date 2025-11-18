@@ -40,6 +40,40 @@ h1, h2 {
   border-bottom: 1px solid rgba(58,124,165,0.35); /* 海藍 */
   padding-bottom: 16px;
 }
+    .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  background-color: #FFEFD7; /* 奶油橘紙色 */
+  border-right: 1px solid rgba(58,124,165,0.25); /* 海藍細線 */
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #465A7C; /* 深海藍灰 */
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 4px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+/* hover 金色光 */
+.sidebar a:hover {
+  background-color: #F3CC7A; /* 香草金 */
+  color: #2E3A5C;            /* 更深海藍字 */
+}
+
+/* 主內容往右位移避免被側欄擋住 */
+.page {
+  margin-left: 180px;
+}
 
 /* ======= 相簿卡片 ======= */
 
